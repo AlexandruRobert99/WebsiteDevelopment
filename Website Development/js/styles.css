@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(33, 33, 33);
+  }
+  h1 {
+    color: rgb(220, 220, 220);
+    font-family: sans-serif;
+  }
+
+  h4 {
+    color: rgb(220, 220, 220);
+    font-family: sans-serif;
+  }
+
+  p {
+    color: rgb(220, 220, 220);
+    font-family: 'Segoe UI';
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    font-size: 18.4px;
+    line-height: 27.6px;
+  }
+
+  p1 {
+    color: rgb(220, 220, 220);
+    font-family: 'Segoe UI';
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 18.4px;
+    line-height: 27.6px;
+  }
+
+  img {
+      height: 170px;
+      width: 150px;
+  }
+
+  .image {
+    position: relative;
+    animation-name: logo;
+    animation-duration: 10s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    margin-bottom: 30px;
+  }
+
+  @keyframes logo {
+    0%   {left:200px; top:0px;}
+    50%  {left:850px; top:0px}
+    100% {left:200px; top:0px}
+  }
+
+  li {
+    display: inline;
+    float: left;
+  }
+
+  ul {
+    display:inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(43, 43, 43);
+    margin-left:200px;
+    margin-right:200px;
+    align-content: center;
+  }
+
+  
+  li a {
+    display: block;
+    color: rgb(220, 220, 220);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+
+  button {
+    background-color: rgba(247,224,24,255);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+  }
+
+  .selections {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+  }
+  
+  .selection:hover {
+    transform: scale(1.2);
+  }
+  
+  .results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); /*doua coloane, iar 1fr insemana că vor fi egale */
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .result-score {
+    margin-left: .1rem;
+    font-size: .5rem;
+    color: #333;
+  }
+  
+  .result-selection {
+    opacity: .5;
+  }
+  
+  .result-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+  }
+
+  div {
+    color: rgb(220, 220, 220);
+    font-family: 'Segoe UI';
+    font-size: 20px;
+  }
+
+  .result-score{
+    color: rgb(220, 220, 220);
+    font-family: 'Segoe UI';
+    font-size: 20px;
+  }
